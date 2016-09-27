@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head lang="en">
+  <meta charSet="utf-8"/>
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Assignment</title>
+</head>
+<body class="m0">
+  <div class="main">
+      <div class="clearfix header bg-white menu">
+          <div class="col col-4 md-col-4 center left-menu">
+              <div class="col md-col-3 border-right item p2">
+                <i class="fa fa-leaf circle border p2" aria-hidden="true"></i>
+              </div>
+              <div class="col md-col-3 item p2">
+                <i class="fa fa-bell circle border p2" aria-hidden="true"></i>
+              </div>
+              <div class="col md-col-3 item p2">
+                <i class="fa fa-envelope circle border p2" aria-hidden="true"></i>
+              </div>
+              <div class="col md-col-3 item border-bottom p2">
+                <i class="fa fa-hashtag circle border p2" aria-hidden="true"></i>
+              </div>
+          </div>
+          <div class="col col-4 md-col-4 center">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="col col-4 md-col-4 right-align form-item right-menu">
+              <div class="col md-col-10">
+                <form id="search-form" class="md-col-7 right">
+                  <div class="flexy-search">
+                    <input id="search" type="search" class="input search-field" id="search-field" placeholder="search">
+                    <label for="search-field" id="search-label">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+
+                  </div>
+                </form>
+              </div>
+              <div class="col md-col-2 item pr2">
+                <img class="circle" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" width="50" height="50" />
+              </div>
+          </div>
+      </div>
+      <div class="max-width-3 mx-auto mb3">
+        <div class="clearfix bg-white center mt4 mb3 twitter-info-section" id="tabs-list">
+            <div class="col md-col-3 border-bottom active tab" data-name="tweets" onclick="setActive(event)">
+                <p class="mb0">TWEETS</p>
+                <p class="bold mt0 h3">200</p>
+            </div>
+            <div class="col md-col-3 tab" data-name="photo" onclick="setActive(event)">
+              <p class="mb0">PHOTO/VIDEOS</p>
+              <p class="bold mt0 h3">200</p>
+            </div>
+            <div class="col md-col-3 tab" data-name="following" onclick="setActive(event)">
+              <p class="mb0">FOLLOWING</p>
+              <p class="bold mt0 h3">200</p>
+            </div>
+            <div class="col md-col-3 tab" data-name="followers" onclick="setActive(event)">
+              <p class="mb0">FOLLOWERS</p>
+              <p class="bold mt0 h3">1M</p>
+            </div>
+        </div>
+        <div class="tweets-list" id="tweets-content">
+        </div>
+        <div class="clearfix bg-white center mt4 mb3 no-info-section p2 hide" id="no-content">
+          <div class="col md-col-12 h3">
+            No data available
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="./bundle.js"></script>
+  <script type="text/javascript">
+    function setActive(e) {
+      var tabs = document.getElementById('tabs-list').getElementsByClassName('tab');
+      for(let i=0;i<tabs.length;i++) {
+        tabs[i].classList.remove('active')
+        tabs[i].classList.remove('border-bottom')
+      }
+      e.currentTarget.classList.add('active')
+      e.currentTarget.classList.add('border-bottom')
+      if(e.currentTarget.getAttribute('data-name') === 'tweets') {
+        document.getElementById('tweets-content').classList.remove('hide');
+        document.getElementById('no-content').classList.add('hide');
+      } else {
+        document.getElementById('tweets-content').classList.add('hide');
+        document.getElementById('no-content').classList.remove('hide');
+      }
+    }
+  </script>
+</body>
+</html>

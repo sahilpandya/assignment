@@ -1,0 +1,17 @@
+{"tweets":[
+    {"name":"John","id":"@john","detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "userImg":"http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg", "imgContentUrl":"", "retweetCount":"", "time":"1h", "markGreen":true},
+
+    {"name":"Anna", "id":"@anna", "detail":"", "userImg":"http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg", "imgContentUrl":"./static/img1.jpg",
+      "retweetCount":"20", "time":"YESTERDAY", "markGreen":false},
+
+    {"name":"Peter", "id":"@peter", "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "userImg":"http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg", "imgContentUrl":"", "retweetCount":"", "time":"2M", "markGreen":false},
+
+    {"name":"Chaini", "id":"@chaini", "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    "userImg":"http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg", "imgContentUrl":"", "retweetCount":"5", "time":"8h", "markGreen":true},
+
+    {"name":"Chaini123", "id":"@chaini", "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    "userImg":"http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg", "imgContentUrl":"", "retweetCount":"5", "time":"8h", "markGreen":true}
+]
+}
